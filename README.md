@@ -41,8 +41,6 @@ Se implementa una calculadora general de combinaciones, que permite calcular el 
 
 ## Problema 6: Permutaciones circulares con restricciones
 
-# Problema 1: Permutaciones circulares
-
 ## Descripción del problema
 
 Construya un programa que cuente arreglos circulares de \(n\) objetos distintos.
