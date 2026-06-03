@@ -9,33 +9,207 @@ Este proyecto implementa soluciones a problemas de conteo del bono de programaci
 ---
 
 # Problemas implementados
+# Problema 3: Conteo de cadenas binarias con restricciones
 
-## Problema 2: Calculadora de combinaciones
+## Descripción del problema
 
-### Descripción
+Construya un programa que cuente cadenas binarias de longitud (n) bajo distintas restricciones relacionadas con la cantidad de unos presentes en la cadena.
 
-Se implementa una calculadora general de combinaciones, que permite calcular el número de formas de escoger r elementos de un conjunto de n elementos sin importar el orden.
+Una cadena binaria es una secuencia formada únicamente por los símbolos (0) y (1).
 
----
-
-### Fórmula matemática
-
-\[
-\binom{n}{r} = \frac{n!}{r!(n-r)!}
-\]
+El programa permite calcular la cantidad de cadenas que cumplen diferentes condiciones y, opcionalmente, listar todas las cadenas cuando el tamaño es pequeño.
 
 ---
 
-### Funcionalidades
+## Base matemática
 
-- Cálculo de \( \binom{n}{r} \)
-- Validación de entradas (0 ≤ r ≤ n)
-- Cálculo de factorial
-- Generación de fila del triángulo de Pascal
-- Verificación de simetría:
-  \[
-  \binom{n}{r} = \binom{n}{n-r}
-  \]
+### 1. Número total de cadenas binarias de longitud (n)
+
+Cada posición puede tomar dos valores posibles ((0) o (1)), por lo que el número total de cadenas es:
+
+[
+2^n
+]
+
+---
+
+### 2. Cadenas con exactamente (k) unos
+
+Se deben escoger las (k) posiciones donde aparecerán los unos entre las (n) posiciones disponibles:
+
+[
+\binom{n}{k}
+]
+
+---
+
+### 3. Cadenas con a lo sumo (k) unos
+
+Se suman todos los casos posibles desde (0) hasta (k) unos:
+
+[
+\sum_{i=0}^{k} \binom{n}{i}
+]
+
+---
+
+### 4. Cadenas con al menos (k) unos
+
+Se suman todos los casos posibles desde (k) hasta (n) unos:
+
+[
+\sum_{i=k}^{n} \binom{n}{i}
+]
+
+---
+
+### 5. Cadenas con igual número de ceros y unos
+
+Esta condición solo es posible cuando (n) es par.
+
+Se seleccionan las posiciones de los unos:
+
+[
+\binom{n}{n/2}
+]
+
+---
+
+## Restricciones implementadas
+
+### 1. Todas las cadenas binarias de longitud (n)
+
+Calcula:
+
+[
+2^n
+]
+
+---
+
+### 2. Exactamente (k) unos
+
+Calcula:
+
+[
+\binom{n}{k}
+]
+
+---
+
+### 3. A lo sumo (k) unos
+
+Calcula:
+
+[
+\sum_{i=0}^{k} \binom{n}{i}
+]
+
+---
+
+### 4. Al menos (k) unos
+
+Calcula:
+
+[
+\sum_{i=k}^{n} \binom{n}{i}
+]
+
+---
+
+### 5. Igual número de ceros y unos
+
+Si (n) es par:
+
+[
+\binom{n}{n/2}
+]
+
+Si (n) es impar, el programa informa que no existe ninguna cadena que cumpla la condición.
+
+---
+
+## Extensión opcional
+
+Cuando:
+
+[
+n \leq 10
+]
+
+el programa genera y muestra explícitamente todas las cadenas binarias que satisfacen la restricción seleccionada.
+
+Esto permite verificar visualmente los resultados obtenidos mediante las fórmulas combinatorias.
+
+---
+
+## Justificación combinatoria
+
+Las restricciones implementadas se fundamentan en el principio de conteo y en los coeficientes binomiales.
+
+Cada cadena binaria puede interpretarse como una selección de posiciones donde aparecen unos. Por esta razón, el número de cadenas que contienen exactamente (k) unos coincide con el número de formas de escoger (k) posiciones entre (n), es decir:
+
+[
+\binom{n}{k}
+]
+
+Las demás restricciones se obtienen sumando los casos correspondientes o aplicando directamente propiedades de los coeficientes binomiales.
+
+---
+
+## Complejidad
+
+### Conteo
+
+Las operaciones de conteo mediante combinaciones tienen complejidad:
+
+[
+O(n)
+]
+
+o menor dependiendo de la implementación de los coeficientes binomiales.
+
+### Generación de cadenas
+
+La generación explícita de todas las cadenas binarias requiere:
+
+[
+O(2^n)
+]
+
+por lo que se limita a valores pequeños de (n).
+
+---
+
+## Ejemplo
+
+Para:
+
+[
+n = 5,\quad k = 2
+]
+
+el número de cadenas binarias con exactamente dos unos es:
+
+[
+\binom{5}{2}=10
+]
+
+Las cadenas correspondientes son:
+
+```text
+00011
+00101
+00110
+01001
+01010
+01100
+10001
+10010
+10100
+11000
+```
+
 
 ---
 
