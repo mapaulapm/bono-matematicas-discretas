@@ -181,38 +181,6 @@ por lo que se limita a valores pequeños de (n).
 
 ---
 
-## Ejemplo
-
-Para:
-
-$$
-n = 5,\quad k = 2
-$$
-
-el número de cadenas binarias con exactamente dos unos es:
-
-$$
-\binom{5}{2}=10
-$$
-
-Las cadenas correspondientes son:
-
-```text
-00011
-00101
-00110
-01001
-01010
-01100
-10001
-10010
-10100
-11000
-```
-
-
----
-
 ## Problema 6: Permutaciones circulares con restricciones
 
 ## Descripción del problema
