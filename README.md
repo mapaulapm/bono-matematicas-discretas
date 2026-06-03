@@ -27,9 +27,9 @@ El programa permite calcular la cantidad de cadenas que cumplen diferentes condi
 
 Cada posición puede tomar dos valores posibles ((0) o (1)), por lo que el número total de cadenas es:
 
-[
+$$
 2^n
-]
+$$
 
 ---
 
@@ -37,9 +37,9 @@ Cada posición puede tomar dos valores posibles ((0) o (1)), por lo que el núme
 
 Se deben escoger las (k) posiciones donde aparecerán los unos entre las (n) posiciones disponibles:
 
-[
+$$
 \binom{n}{k}
-]
+$$
 
 ---
 
@@ -47,9 +47,9 @@ Se deben escoger las (k) posiciones donde aparecerán los unos entre las (n) pos
 
 Se suman todos los casos posibles desde (0) hasta (k) unos:
 
-[
+$$
 \sum_{i=0}^{k} \binom{n}{i}
-]
+$$
 
 ---
 
@@ -57,9 +57,9 @@ Se suman todos los casos posibles desde (0) hasta (k) unos:
 
 Se suman todos los casos posibles desde (k) hasta (n) unos:
 
-[
+$$
 \sum_{i=k}^{n} \binom{n}{i}
-]
+$$
 
 ---
 
@@ -69,9 +69,9 @@ Esta condición solo es posible cuando (n) es par.
 
 Se seleccionan las posiciones de los unos:
 
-[
+$$
 \binom{n}{n/2}
-]
+$$
 
 ---
 
@@ -81,9 +81,9 @@ Se seleccionan las posiciones de los unos:
 
 Calcula:
 
-[
+$$
 2^n
-]
+$$
 
 ---
 
@@ -91,51 +91,51 @@ Calcula:
 
 Calcula:
 
-[
+$$
 \binom{n}{k}
-]
+$$
 
----
+
 
 ### 3. A lo sumo (k) unos
 
 Calcula:
 
-[
+$$
 \sum_{i=0}^{k} \binom{n}{i}
-]
+$$
 
----
+
 
 ### 4. Al menos (k) unos
 
 Calcula:
 
-[
+$$
 \sum_{i=k}^{n} \binom{n}{i}
-]
+$$
 
----
+
 
 ### 5. Igual número de ceros y unos
 
 Si (n) es par:
 
-[
+$$
 \binom{n}{n/2}
-]
+$$
 
 Si (n) es impar, el programa informa que no existe ninguna cadena que cumpla la condición.
 
----
+
 
 ## Extensión opcional
 
 Cuando:
 
-[
+$$
 n \leq 10
-]
+$$
 
 el programa genera y muestra explícitamente todas las cadenas binarias que satisfacen la restricción seleccionada.
 
@@ -149,9 +149,9 @@ Las restricciones implementadas se fundamentan en el principio de conteo y en lo
 
 Cada cadena binaria puede interpretarse como una selección de posiciones donde aparecen unos. Por esta razón, el número de cadenas que contienen exactamente (k) unos coincide con el número de formas de escoger (k) posiciones entre (n), es decir:
 
-[
+$$
 \binom{n}{k}
-]
+$$
 
 Las demás restricciones se obtienen sumando los casos correspondientes o aplicando directamente propiedades de los coeficientes binomiales.
 
@@ -163,9 +163,9 @@ Las demás restricciones se obtienen sumando los casos correspondientes o aplica
 
 Las operaciones de conteo mediante combinaciones tienen complejidad:
 
-[
+$$
 O(n)
-]
+$$
 
 o menor dependiendo de la implementación de los coeficientes binomiales.
 
@@ -173,9 +173,9 @@ o menor dependiendo de la implementación de los coeficientes binomiales.
 
 La generación explícita de todas las cadenas binarias requiere:
 
-[
+$$
 O(2^n)
-]
+$$
 
 por lo que se limita a valores pequeños de (n).
 
@@ -185,15 +185,15 @@ por lo que se limita a valores pequeños de (n).
 
 Para:
 
-[
+$$
 n = 5,\quad k = 2
-]
+$$
 
 el número de cadenas binarias con exactamente dos unos es:
 
-[
+$$
 \binom{5}{2}=10
-]
+$$
 
 Las cadenas correspondientes son:
 
