@@ -270,8 +270,22 @@ evidencias/
 
 ## Requisitos
 - Python 3.x
+-Jupyter Notebook o Google Colab
+## El archivo del proyecto es:
+ejercicio_6_permutaciones_circulares.ipynb
+ejercicio_3.ipynb
 
 ## Ejecución
 
-```bash
-python main.py
+1.Abrir Jupyter Notebook o Google Colab
+2.Cargar el archivo .ipynb
+3.Ejecutar las celdas en orden (Shift + Enter)
+4.Ingresar los datos solicitados cuando el programa lo pida
+5.Seleccionar las opciones del menú según el problema
+
+Recomendaciones:
+
+-Ejecutar primero las celdas de funciones
+-Luego ejecutar la celda del menú principal
+-No ejecutar celdas en desorden para evitar errores
+-Usar solo números enteros para n y k
