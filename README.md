@@ -264,7 +264,7 @@ Por esta razón, se fija una persona como referencia, reduciendo el problema a p
 
 Las capturas de las pruebas realizadas se encuentran en la carpeta:
 
-evidencias/
+pruebas.zip
 
 # Cómo ejecutar el programa
 
