@@ -233,11 +233,10 @@ $$
 $$
 
 
-
 ### 4. Varios grupos deben sentarse separados
 
-Se modela mediante agrupación en bloques y uso del principio de exclusión (dependiendo del tamaño de los grupos).
-
+Esta restricción depende del número de grupos y del tamaño de cada uno.
+Debido a que el enunciado no especifica una configuración concreta, el programa incluye una aproximación basada en bloques. Una implementación completamente general requeriría aplicar el principio de inclusión-exclusión según las características de los grupos.
 ---
 
 ## Justificación de la simetría circular
