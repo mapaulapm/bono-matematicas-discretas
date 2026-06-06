@@ -260,6 +260,11 @@ Por esta razón, se fija una persona como referencia, reduciendo el problema a p
 - Para "dos personas separadas" se requiere n ≥ 2.
 - Para "líder entre dos personas específicas" se requiere n ≥ 3.
 
+## Evidencias
+
+Las capturas de las pruebas realizadas se encuentran en la carpeta:
+
+evidencias/
 
 # Cómo ejecutar el programa
 
