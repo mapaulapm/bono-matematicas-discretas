@@ -245,6 +245,21 @@ En una mesa circular, cualquier rotación de los elementos no genera una disposi
 
 Por esta razón, se fija una persona como referencia, reduciendo el problema a permutar los \(n-1\) elementos restantes.
 
+# Casos especiales
+
+## Problema 3
+
+- n debe ser un entero positivo.
+- k debe satisfacer 0 ≤ k ≤ n.
+- Si n es impar, no existen cadenas con igual número de ceros y unos.
+
+## Problema 6
+
+- n debe ser un entero positivo.
+- Para "dos personas juntas" se requiere n ≥ 2.
+- Para "dos personas separadas" se requiere n ≥ 2.
+- Para "líder entre dos personas específicas" se requiere n ≥ 3.
+
 
 # Cómo ejecutar el programa
 
