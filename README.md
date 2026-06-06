@@ -270,6 +270,7 @@ pruebas.zip
 
 ## Requisitos
 - Python 3.x
+  
 -Jupyter Notebook o Google Colab
 ## El archivo del proyecto es:
 ejercicio_6_permutaciones_circulares.ipynb
